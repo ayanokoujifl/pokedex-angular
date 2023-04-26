@@ -5,3 +5,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+
+input:focus {
+  outline: none;
+}
