@@ -1,0 +1,48 @@
+@import "../../../scss/rem-calc.scss";
+
+:host {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    padding: px-to-rem(24) 0;
+    flex-wrap: wrap;
+    gap: 24px;
+    a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      width: 48%;
+      background-color: var(--white-color);
+      border-radius: 8px;
+      justify-content: space-between;
+      padding: px-to-rem(20);
+      align-items: center;
+      .status {
+        h2 {
+          font-style: italic;
+          font-weight: 700;
+          margin-bottom: px-to-rem(4);
+          text-transform: capitalize;
+        }
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          li {
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            padding: px-to-rem(4) px-to-rem(6);
+            font-size: px-to-rem(14);
+          }
+        }
+      }
+      .image img {
+        width: px-to-rem(72);
+      }
+    }
+  }
+}
