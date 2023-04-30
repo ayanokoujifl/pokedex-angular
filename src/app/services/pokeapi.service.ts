@@ -5,7 +5,7 @@ import { Observable, map, tap } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class PokeapiService {
+export class PokeApiService {
   private url: string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100';
 
   constructor(private http: HttpClient) {}

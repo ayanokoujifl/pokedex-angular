@@ -1,4 +1,9 @@
 <form>
-  <input type="text" placeholder="Buscar pokemom" />
+  <input
+    #input
+    type="text"
+    placeholder="Buscar pokemom"
+    (keyup)="searchPokemom(input.value)"
+  />
   <img src="assets/search.svg" alt="Buscar" />
 </form>
