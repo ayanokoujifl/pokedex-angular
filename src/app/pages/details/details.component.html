@@ -1,32 +1,30 @@
 <app-header></app-header>
 <main>
-  <ng-template *ngIf="isLoading">
-    <section class="names">
-      <h1>{{ pokemon[0].name }}</h1>
-      <h2>{{ pokemon[1].names[0].name }}</h2>
-    </section>
-    <section class="status">
-      <img
-        [src]="pokemon[0].sprites.other.dream_world.front_default"
-        [alt]="pokemon[0].name"
-      />
-      <article class="statistics">
-        <section>
-          <h3>Estatísticas</h3>
+  <section class="names" *ngIf="isLoading">
+    <h1>{{ pokemon[0].name }}</h1>
+    <h2>{{ pokemon[1].names[0].name }}</h2>
+  </section>
+  <section class="status">
+    <img
+      [src]="pokemon[0].sprites.other.dream_world.front_default"
+      [alt]="pokemon[0].name"
+    />
+    <article class="statistics">
+      <section>
+        <h3>Estatísticas</h3>
 
-          <ol>
-            <li *ngFor="let value of pokemon[0].stats">
-              {{ value.stat.name }}
-              <strong>
-                {{ value.base_stat }}
-              </strong>
-            </li>
-          </ol>
-        </section>
-        <a [routerLink]="['']" class="btn">Voltar</a>
-      </article>
-    </section>
-  </ng-template>
+        <ol>
+          <li *ngFor="let value of pokemon[0].stats">
+            {{ value.stat.name }}
+            <strong>
+              {{ value.base_stat }}
+            </strong>
+          </li>
+        </ol>
+      </section>
+      <a [routerLink]="['']" class="btn">Voltar</a>
+    </article>
+  </section>
   <img
     src="../../../assets/error.png"
     alt="Erro na API"

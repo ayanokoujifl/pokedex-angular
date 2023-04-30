@@ -34,10 +34,10 @@ export class DetailsComponent implements OnInit {
         this.pokemon = res;
         this.isLoading = true;
       },
-      () => {
+      (error) => {
         this.apiError = true;
       }
     );
-    return;
+    return this.pokemon;
   }
 }
