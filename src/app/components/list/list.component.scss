@@ -45,4 +45,24 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .list {
+      justify-content: center;
+      a {
+        width: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 424px) {
+    .list {
+      a {
+        width: 75%;
+        .image img {
+          width: px-to-rem(96);
+        }
+      }
+    }
+  }
 }
