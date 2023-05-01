@@ -94,34 +94,31 @@
         cursor: pointer;
       }
     }
+  }
+  @media (max-width: 644px) {
+    main {
+      padding: 24px;
+    }
+    .statistics {
+      width: 100%;
+      border-radius: 24px !important;
+    }
+  }
 
-    @media (max-width: 420px) {
-      margin-top: px-to-rem(10);
-
+  @media (max-width: 465px) {
+    main {
       .names {
-        h1 {
-          font-size: px-to-rem(20);
-        }
-
         h2 {
-          top: px-to-rem(35);
-          font-size: px-to-rem(20);
+          font-size: 2rem;
+          top: 1.4rem;
+        }
+        h1 {
+          font-size: 1.8rem;
         }
       }
-
       .status {
-        position: relative;
-
         img {
-          position: absolute;
-          top: px-to-rem(-80);
-          left: px-to-rem(0);
-          max-width: px-to-rem(100);
-        }
-
-        .statistics {
-          min-height: 57vh;
-          padding-top: px-to-rem(50);
+          max-width: px-to-rem(110);
         }
       }
     }
